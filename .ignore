@@ -3,3 +3,6 @@
 .settings/*
 target/
 bin/
+.project
+target/*
+.classpath
