@@ -19,13 +19,13 @@ public class NonZeroRowColumn {
 			zeroElements(inputArray, rows, columns, count);
 			break;
 		case 1:
-			NonZeroElements(inputArray, rows, columns, count);
+			nonZeroElements(inputArray, rows, columns, count);
 			break;
 		case 2:
-			NonZeroRows(inputArray, rows, columns, count);
+			nonZeroRows(inputArray, rows, columns, count);
 			break;
 		case 3:
-			NonZeroColumns(inputArray, rows, columns, count);
+			nonZeroColumns(inputArray, rows, columns, count);
 			break;
 		default:
 			System.out.println("please enter given numbers only... Run the program again..");
@@ -34,7 +34,7 @@ public class NonZeroRowColumn {
 
 	}
 
-	private static void NonZeroColumns(int[][] inputArray, int rows, int columns, int count) {
+	private static void nonZeroColumns(int[][] inputArray, int rows, int columns, int count) {
 		int nonZeroColumns = 0;
 
 		for (int j = 0; j < columns; j++) {
@@ -50,7 +50,7 @@ public class NonZeroRowColumn {
 
 	}
 
-	private static void NonZeroRows(int[][] inputArray, int rows, int columns, int count) {
+	private static void nonZeroRows(int[][] inputArray, int rows, int columns, int count) {
 		int nonZeroRows = 0;
 		for (int i = 0; i < rows; i++) {
 			int temp = 0;
@@ -65,7 +65,7 @@ public class NonZeroRowColumn {
 		System.out.println("Number of Non-Zero Rows in the input array is :" + nonZeroRows);
 	}
 
-	private static void NonZeroElements(int[][] inputArray, int rows, int columns, int count) {
+	private static void nonZeroElements(int[][] inputArray, int rows, int columns, int count) {
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < columns; j++) {
 				if (inputArray[i][j] != 0)
